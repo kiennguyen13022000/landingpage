@@ -261,6 +261,10 @@ body {
     animation: zoomBTN 0.6s linear infinite alternate;
 }
 
+.btn__register:focus {
+    outline: none;
+}
+
 @keyframes zoomBTN {
     from {
         transform: scale(0.8);
@@ -1123,6 +1127,33 @@ body {
     animation: phone 0.5s infinite alternate-reverse;
 }
 
+.class__info .title__modal__class {
+    color: rgb(20, 77, 156);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center !important;
+    letter-spacing: 0px;
+    line-height: 1.2;
+}
+
+.class__info li {
+    position: relative;
+    padding-left: 27px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+}
+
+.class__info li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    background-image: url(../images/other/download.svg);
+}
+
 @keyframes phone {
     0% {
         -ms-transform: rotate(15deg);
@@ -1261,6 +1292,9 @@ body {
     #course__register .modal-lg {
         width: 405px !important;
         height: 530px !important;
+    }
+    .class__info .modal-lg {
+        width: 550px !important;
     }
 }
 
@@ -1478,6 +1512,10 @@ body {
 }
 
 @media screen and (max-width: 575.99845px) {
+    .title__logo {
+        font-size: 16px;
+        padding-right: 0px !important;
+    }
     .wrapper__phone {
         width: 30px !important;
         height: 30px !important;
@@ -1820,6 +1858,9 @@ body {
 }
 
 @media screen and (max-width: 428.99845px) {
+    .class__info {
+        zoom: 0.8;
+    }
     .img__schedule {
         zoom: 0.9;
         height: 280px;
@@ -1861,7 +1902,7 @@ body {
     .wrapper__item__video {
         height: 180px;
     }
-    .title__logo {
+    /* .title__logo {
         transform: scale(0.833);
         padding-right: 0px;
         font-size: 11px;
@@ -1869,7 +1910,7 @@ body {
     .navigation h5 {
         transform: scale(0.833);
         font-size: 11px;
-    }
+    } */
 }
 
 @media screen and (max-width: 382.99845px) {
@@ -1893,8 +1934,11 @@ body {
         top: 1px;
         left: 7px;
     } */
-    .nav__ .nav-link {
+    /* .nav__ .nav-link {
         padding: 0 !important;
+    } */
+    .bg__nav {
+        zoom: 0.75;
     }
 }
 
